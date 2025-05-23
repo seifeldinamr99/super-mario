@@ -8,20 +8,45 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
 
     <style>
-        body {
-            margin: 0
-        }
+    body {
+        margin: 0
+    }
 
-        .game {
-            margin: 0;
-            display: block;
-            background: #000;
-            position: absolute;
-            left: 50%;
-            top: 0;
-            transform: translate(-50%, 0);
-        }
-    </style>
+    .game {
+        margin: 0;
+        display: block;
+        background: #000;
+        position: absolute;
+        left: 50%;
+        top: 0;
+        transform: translate(-50%, 0);
+    }
+
+    #super-mario-run input,
+    #super-mario-run button {
+        position: absolute;
+        z-index: 10;
+        font-size: 18px;
+        padding: 8px;
+        border-radius: 5px;
+        border: none;
+    }
+
+    #playerName {
+        left: 50%;
+        top: 40%;
+        transform: translate(-50%, -50%);
+    }
+
+    #startGameBtn {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #ffd700;
+        cursor: pointer;
+    }
+</style>
+
 </head>
 <body>
 
@@ -29,13 +54,9 @@
 
 </div>
 
-<!-- build:js phaser.min.js -->
-<script src="dist/bundle.min.js"></script>
-<!-- /build -->
+<script src="phaser.min.js"></script>
 
-<!-- build:js bundle.min.js -->
-<script src="dist/bundle.min.js"></script>
-<!-- /build -->
+<script src="bundle.min.js"></script>
 
 </body>
 </html>
